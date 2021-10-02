@@ -1,0 +1,117 @@
+/* ========
+common css start
+========== */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 1230px;
+    margin: 0 auto;
+}
+img{
+    vertical-align: middle;
+}
+/*=============
+navigation bar css start
+==================== :*/
+#navigation{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 9px 16px 4px rgba(202,174,174,0.5);
+    
+}
+#navigation .container{
+    display: flex;
+    height: 100%;
+}
+#navigation .container .logo{
+    width: 172px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+#navigation .container .logo img{
+    width: 100%;
+}
+#navigation .container .nav-list{
+    width: 818px;
+    height: 80px;
+}
+#navigation .container .nav-list ul{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+}
+#navigation .container .nav-list li{
+
+}
+#navigation .container .nav-list li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 0 15px;
+    color: #000;
+
+}
+#navigation .container .button{
+    display: flex;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 240px;
+    justify-content: space-between;
+}
+#navigation .container .button a{
+    text-transform: capitalize;
+    color: #fff;
+    padding: 12px 30px;
+    background: blue;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+#navigation .container .button a::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -100%;
+    transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    background: #8e1f49;
+    z-index: -1;
+}
+#navigation .container .button a:hover:after{
+    left: 0;
+}
+#navigation .container .button .mobile-menu span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #1f1f1f;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#navigation .container .button .mobile-menu span:nth-child(1){
+
+}
+#navigation .container .button .mobile-menu span:nth-child(2){
+    width: 19px;
+}
+#navigation .container .button .mobile-menu span:nth-child(3){
+    
+}
